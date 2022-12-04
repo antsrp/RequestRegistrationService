@@ -32,4 +32,15 @@ make docker-start
 
 Регистрация обращений (frontend) - localhost:80   
 RabbitMQ консоль - localhost:15672 [реквизиты указаны в rabbitmq.conf в каталоге rabbitmq]   
+
+Вход в консоль БД
+```
+psql -U <user_name> -d <db_name>
+```
+
+Просмотр таблиц в БД
+```
+\dt
+```
+
 Реквизиты доступа к БД указаны в Dockerfile в каталоге db   
