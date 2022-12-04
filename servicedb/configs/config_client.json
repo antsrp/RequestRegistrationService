@@ -1,0 +1,7 @@
+{
+    "host": "rmq",
+    "port": "5672",
+    "login": "super",
+    "password": "123",
+    "queue": "c_queue"
+}

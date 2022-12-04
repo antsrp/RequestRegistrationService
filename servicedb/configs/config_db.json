@@ -1,0 +1,7 @@
+{
+    "host": "p_db",
+    "port": "5432",
+    "database": "adb",
+    "user": "super",
+    "password": "1212"
+}

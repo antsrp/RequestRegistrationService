@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Отправка обращения</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <script src="static/js/form.js"></script>
+</head>
+<body>
+	<form action="#" onsubmit="send(this)" method="post" class="form-appeal" id="appeal_form">
+  <div class="form-container">
+    <label for="surname">Фамилия</label>
+    <input type="text" class="input_field" name="surname" id="surname" placeholder="Иванов" required>
+  </div>
+  <div class="form-container">
+    <label for="name">Имя</label>
+    <input type="text" class="input_field" name="name" id="name" placeholder="Иван" required>
+  </div>
+  <div class="form-container">
+    <label for="patron">Отчество</label>
+    <input type="text" class="input_field" name="patron" id="patron" placeholder="Иванович" required>
+  </div>
+  <div class="form-container">
+    <label for="phone">Телефон</label>
+    <input type="tel" class="input_field" name="phone" id="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8-111-111-11-11" required>
+  </div>
+  <div class="form-container">
+    <label for="text_appeal">Текст обращения</label>
+    <textarea name="text_appeal" id="text_appeal" required></textarea>
+  </div>
+  <div>
+    <small id="ending"></small>
+    <input type="submit" class="submitter" value="Отправить">
+  </div>
+</form>
+</body>
+</html>

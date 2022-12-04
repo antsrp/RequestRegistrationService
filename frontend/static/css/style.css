@@ -1,0 +1,48 @@
+body{
+    font-family: cursive, serif;
+}
+
+form.form-appeal {
+    display: table;
+}
+
+div.form-container {
+    display: table-row;
+}
+
+label, .input_field, #text_appeal {
+    display: table-cell;
+    vertical-align: middle;
+    height: 2em;
+}
+
+input {
+    margin: 1em 0 1em 0;
+}
+
+.input_field, #text_appeal{
+    width: 20em;
+}
+
+#text_appeal{
+    height: 5em;
+    padding: 1px 3px;
+}
+
+label, #ending{
+    width: 13em;
+}
+
+#ending{
+    color: red;
+}
+
+.submitter{
+    margin: 2em 0 0 70%;
+    padding: 0.5em;
+}
+
+.button_return{
+    margin-top: 1em;
+    padding: 0.3em 1.5em;
+}

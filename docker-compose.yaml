@@ -1,0 +1,49 @@
+version: "4.7.1"
+
+services:
+  backend:
+     build: 
+      context: backend
+     container_name: backend
+     restart: on-failure
+     ports:
+     - 5111:5111
+     depends_on:
+     - rabbitmq
+
+  frontend:  
+     build: 
+      context: frontend
+     container_name: frontend
+     ports:
+     - 80:80     
+
+  rabbitmq:
+     build: 
+      context: rabbitmq
+     container_name: rmq
+     ports:
+     - 15672:15672
+     - 5672:5672    
+
+  servicedb:
+     build:  
+      context: servicedb
+     container_name: service_db
+     restart: on-failure
+     ports:
+     - 8777:8777
+     depends_on:
+     - rabbitmq
+     - db
+
+  db:
+    build: 
+     context: db
+    container_name: p_db
+    environment:
+      POSTGRES_DB: "adb"
+      POSTGRES_USER: "super"
+      POSTGRES_PASSWORD: "1212"
+    ports:
+      - "5432:5432"

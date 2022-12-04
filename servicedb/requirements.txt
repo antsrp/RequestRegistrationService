@@ -1,0 +1,4 @@
+aio_pika==8.2.5
+fastapi==0.88.0
+psycopg2==2.9.3
+uvicorn==0.20.0

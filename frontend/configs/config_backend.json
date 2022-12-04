@@ -1,0 +1,5 @@
+{
+    "host": "backend",
+    "port": "5111",
+    "endpoint": "/api/v1/add"
+}
