@@ -30,6 +30,6 @@ make docker-start
 
 ## Доступ
 
-Регистрация обращений (frontend) - localhost:80
-RabbitMQ консоль - localhost:15672 [реквизиты указаны в Dockerfile в каталоге rabbitmq]
-Реквизиты доступа к БД указаны в Dockerfile в каталоге db
+Регистрация обращений (frontend) - localhost:80   
+RabbitMQ консоль - localhost:15672 [реквизиты указаны в Dockerfile в каталоге rabbitmq]   
+Реквизиты доступа к БД указаны в Dockerfile в каталоге db   
